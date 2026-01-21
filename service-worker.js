@@ -1,13 +1,18 @@
+const CACHE_NAME = "agenda-cache-v1";
+
+const FILES_TO_CACHE = [
+  "./",
+  "./index.html",
+  "./app.css",
+  "./filters.js",
+  "./storage.js",
+  "./calendar.js",
+  "./events.js"
+];
+
 self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open("painel-cache").then(cache => {
-      return cache.addAll([
-        "index.html",
-        "assets/css/style.css",
-        "assets/js/app.js",
-        "manifest.json"
-      ]);
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
   );
 });
 
