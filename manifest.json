@@ -1,15 +1,21 @@
 {
-  "name": "Painel Criativo - Claudia",
-  "short_name": "Painel",
-  "start_url": "index.html",
+  "name": "Agenda de Projetos",
+  "short_name": "Agenda",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f2f4f8",
-  "theme_color": "#2b7cff",
+  "background_color": "#f1f5f9",
+  "theme_color": "#2563eb",
   "icons": [
     {
-      "src": "assets/icons/icon.png",
+      "src": "./assets/icons/icon.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
 }
+
